@@ -1,0 +1,139 @@
+/*
+CSS for Tom Said Swiftly Site
+*/
+
+body {
+	font-family: Arial, san-serif;
+	font-size:13px;
+	background-color: #333333;
+	color: #000033;
+	text-align: center;
+}
+
+h1 {
+	text-align: center;
+	color: #000000;
+	font-variant: small-caps;
+}
+
+blockquote {
+	padding: 15px;
+	color: #330033;
+}
+
+.notice {
+	color: #CC0066;
+}
+
+.doing {
+	background-color: #333333;
+}
+
+.specialred {
+	color: #CC0099;
+	font-variant: small-caps;
+	font-weight:bold;
+}
+
+#headerlogo {
+	margin-top:5px;
+	margin-bottom: 15px;
+	font-size: 40px;
+	color: #99CCFF;
+	background-color: #333333;
+	text-align: left;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+#headertagline {
+	font-size: large;
+	font-variant: small-caps;
+	color: #99CCFF;
+	background-color: #333333;
+	font-style: italic;
+	margin-top:5px;
+	margin-bottom: 10px;
+	text-align: right;
+	margin-right: 10px;
+}
+
+#underline {
+	background-color: #666666;
+	height: 5px;
+}
+
+#bodycontent {
+	font-family: Century Gothic, Arial, san-serif;
+	text-align: left;
+	margin: 0px 190px 0px 190px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	background-color: #CCCCCC; 
+}
+
+.image {
+	text-align: center;
+	float: right;	
+	padding-left: 3px;
+}
+
+.image2 {
+	text-align: center;	
+}
+
+a:link {
+	text-decoration: none;
+	color: #99CCFF;
+}
+
+a:visited {
+	color: gray;
+}
+
+a:hover {
+	color: #FFFFFF;
+}
+
+a:active {
+	color: #000033;
+}
+	
+#navigation {
+	position: absolute;
+	width: 140px;
+	font-size:15px;
+}
+
+#navigation li {
+	display: block;
+	padding: 5px;
+	text-align: center;
+	border-style:dashed;
+	border-color: #003399;
+}
+
+#navigation li .selected {
+	color: #CC0099;
+	font-weight: bold;
+	display: block;
+	font-variant: small-caps;
+}
+
+table {
+	border: 1px solid black;
+	text-align: center;
+}
+
+th {
+	background-color: #333333;
+	color: #CC0099;
+	padding: 0.2em;
+}
+
+td {
+	border: 1px solid black;
+	padding: 0.2em;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+   <title>ReadList</title>
+   <link href="/static/style1.css" rel="stylesheet" type="text/css" />
+ </head>
+ <body>
+      <div id="headerlogo"><a href="index.htm" class="selected">The ReadList Site</a></div>
+      <div id="headertagline">All your reading lists in one place</div>
+      <div id="navigation">
+      <ul class="toolbar">
+      
+        {% ifnotequal username None %}
+	<li><a href="list.htm"
+              {% ifequal path '/list.htm' %}
+                    class="selected"
+              {% endifequal %}
+             >Your Reading List</a></li>
+	     
+	<li><a href="add.htm"
+              {% ifequal path '/add.htm' %}
+                    class="selected"
+              {% endifequal %}
+             >Add to List</a></li>    
+	     
+	     
+	     
+	     
+	{% endifnotequal %}
+	
+        <li><a href="apply.htm" 
+              {% ifequal path '/apply.htm' %}
+                    class="selected"
+              {% endifequal %}
+            >Apply</a></li>
+	{% ifequal username None %}
+	
+        <li><a href="/login"
+              {% ifequal path '/login' %}
+                    class="selected"
+              {% endifequal %}
+            >Login</a></li>
+	{% else %}
+	<li><a href="/logout">Logout ({{username}})</a></li>
+	{% endifequal %}
+      </ul>
+   </div>   
+
+   <div id="bodycontent">
+      {% block bodycontent %}
+           Replace this
+      {% endblock %}
+   </div>
+ </body>
+</html>

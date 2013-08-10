@@ -1,0 +1,20 @@
+{% extends "_base.htm" %}
+{% block bodycontent %}
+      <h1>Add a New Reading Item</h1>
+      <p>
+      Please enter your information below:
+      </p>
+       <form method="post" action="/apply">
+      Title: <input type="text" name="title"/> <br>
+      Author (or URL): <input type="text" name="author"/> <br>
+ 
+      <input type="submit" name="Add"/> 
+      <button onClick="window.location='/'; return false;">Cancel</button>
+      </form>
+      </p>
+      {% ifnotequal error None %}
+       <p>
+       {{ error }}
+       </p>
+      {% endifnotequal %}
+{% endblock %}

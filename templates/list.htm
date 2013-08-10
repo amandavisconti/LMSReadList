@@ -1,0 +1,19 @@
+{% extends "_base.htm" %}
+{% block bodycontent %}
+      <p>
+	<h1>List</h1>
+      </p>
+      <p>
+      <table>
+      <tr><th>Title</th>
+      	  <th>Author (or URL)</th>
+      </tr>
+      {% for user in user_list %}
+      	  <tr>
+      	  <td>{{ user.name }}</td>
+	  <td>{{ user.acct }}</td>
+          </tr>
+      {% endfor %}
+      </table>
+      </p>
+{% endblock %}

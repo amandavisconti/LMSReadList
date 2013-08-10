@@ -1,0 +1,21 @@
+{% extends "_base.htm" %}
+{% block bodycontent %}
+      <h1>Please Log In</h1>
+      <p>
+      Please enter your ID and password to log in to this site.
+      </p>
+      <form method="post" action="/login">
+      Account: <input type="text" name="account"/> <br>
+      Password: <input type="password" name="password"/> <br/>
+      <input type="submit" name="Login"/> 
+      <button onClick="window.location='/'; return false;">Cancel</button>
+      <button onClick="window.location='/apply'; return false;">New Account</button>
+      </form>
+      </p>
+      {% ifnotequal error None %}
+       <p>
+       {{ error }}
+       </p>
+      {% endifnotequal %}
+      <!-- http://docs.djangoproject.com/en/dev/ref/templates/builtins/?from=olddocs#ifequal -->
+{% endblock %}
